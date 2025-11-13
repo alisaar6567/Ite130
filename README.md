@@ -20,4 +20,17 @@ syftet med denna labration är att:
 
 ***HTML** står för *Hyper text markup language*
 och det används för att skapa **innehåll och struktur** på webbsidor. 
-HTML består av **taggar** (t.ex. `<h1>, <p>, <li>, <a>` )
+HTML består av **taggar** t.ex. ( `<h1>, <p>, <li>, <a>` )
+
+# föklaring av koden 
+- `<h1>`→ rubrik
+- `<p>` → text skriver man 
+- `<a>` → länk
+- `<body>` → sidans innehåll
+- `<head>` → all information om sidan t.ex. (titel, teckenskod..)
+---
+## här är ett exemple på HTML kod
+![alt="image" src
+)
+
+  
