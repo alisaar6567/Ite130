@@ -1,56 +1,38 @@
-**Skapad av** Alisar.
-**Datum** 2025-11-13
+# Vibe — Task Manager (static)
 
-# Introduktion till HTML
+A small, accessible task manager built with semantic HTML, modern CSS, and vanilla JavaScript.
 
-## Hej och Välkomen!
+Features
+- Add tasks
+- Mark tasks as completed
+- Delete tasks
+- Persisted in `localStorage`
+- Responsive and accessible (aria-live, keyboard-friendly, focus styles)
 
-Hej och välkomen till mitt först GITHUB repo!
-här förklarar jag grunden i **HTML** , som är ett viktigt språk för att skapa webbsidor. 
-Syftet med detta repo är att hjälpa nya studenter att förstå **vad HTML är**, vilka kodar man ska använda, och hur man själv kan komma igång. 
+How to open
+1. Open `index.html` in your browser (double-click or use a local dev server).
 
----
+Optional: run a local static server (recommended for some browsers):
 
-## Syfte
-syftet med denna labration är att: 
-- lära sig hur man använder **Git och Github**.
-- förstå **HTML** grundläggande struktur.
-- testa att skapa, spara och publicera sin första webbsida.
-- öva på att skriva en tydlig **README-fil**
+```bash
+# Python 3
+python3 -m http.server 8000
+# then open http://localhost:8000 in your browser
+```
 
---- 
-## Vad är HTML?
+Notes on accessibility
+- Add/remove/complete actions announce updates via `aria-live` regions.
+- Controls are keyboard focusable; `Enter`/`Space` toggles tasks when focused on the text.
+- Buttons have descriptive `aria-label`s.
 
-***HTML** står för *Hyper text markup language*
-och det används för att skapa **innehåll och struktur** på webbsidor. 
-HTML består av **taggar** t.ex. ( `<h1>, <p>, <li>, <a>` )
+Files
+- `index.html` — semantic markup and app shell
+- `styles.css` — styling and responsive layout
+- `script.js` — app behavior and persistence
 
-# Varför är HTML viktigt?
-Utan HTML skulle webben inte fungera. Alla webbsidor som vi besöker som t.ex. google , youtube är uppbyggda av HTML i grunden. 
+- `mdu-ite130.html` — informationssida för studenter på MDU (ITE130) med länk till Vibe-appen
 
-Att förstå HTML hjälper oss att:
-- skapa egen hemsidor
-- förstå hur webben fungerar
-- kunna bygga vidare med cs och javaScript. 
+Theme
+- The app includes a Dark/Light toggle. The site defaults to Dark mode. The toggle state is saved in localStorage (key `vibe.theme.v1`).
 
----
-
-# Föklaring av koden 
-- `<h1>`→ rubrik
-- `<p>` → text skriver man 
-- `<a>` → länk
-- `<body>` → sidans innehåll
-- `<head>` → all information om sidan t.ex. (titel, teckenskod..)
----
-## Här är ett exemple på HTML kod
-<img width="448" height="308" alt="exampel" src="https://github.com/user-attachments/assets/19029ca5-daa2-4352-b931-f9bc879a0547" />
-
-
----
-Alisar Alkamel
-
-
-
-
-
-  
+You're all set — open `index.html` in a browser to try it.
